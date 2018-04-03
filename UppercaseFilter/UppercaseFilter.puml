@@ -1,0 +1,9 @@
+@startuml
+annotation java.lang.Override
+annotation org.openide.util.lookup.ServiceProvider
+class org.word.editor.uppercase.UppercaseFilter
+interface org.word.editor.api.WordFilter
+org.word.editor.uppercase.UppercaseFilter ..> java.lang.Override
+org.word.editor.uppercase.UppercaseFilter ..> org.openide.util.lookup.ServiceProvider
+org.word.editor.uppercase.UppercaseFilter --|> org.word.editor.api.WordFilter
+@enduml

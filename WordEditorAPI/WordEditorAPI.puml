@@ -1,0 +1,3 @@
+@startuml
+interface org.word.editor.api.WordFilter
+@enduml

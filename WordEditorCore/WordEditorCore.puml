@@ -1,0 +1,27 @@
+@startuml
+annotation TopComponent.Description
+annotation TopComponent.OpenActionRegistration
+annotation TopComponent.Registration
+annotation java.lang.Override
+annotation org.netbeans.api.settings.ConvertAsProperties
+annotation org.openide.awt.ActionID
+annotation org.openide.awt.ActionReference
+annotation org.openide.util.NbBundle.Messages
+class java.util.Collection
+class org.openide.util.Lookup
+class org.openide.windows.TopComponent
+class org.word.editor.api.WordFilter
+class org.word.editor.core.WordTopComponent
+org.word.editor.core.WordTopComponent ..> TopComponent.Description
+org.word.editor.core.WordTopComponent ..> TopComponent.OpenActionRegistration
+org.word.editor.core.WordTopComponent ..> TopComponent.Registration
+org.word.editor.core.WordTopComponent ..> java.lang.Override
+org.word.editor.core.WordTopComponent ..> org.netbeans.api.settings.ConvertAsProperties
+org.word.editor.core.WordTopComponent ..> org.openide.awt.ActionID
+org.word.editor.core.WordTopComponent ..> org.openide.awt.ActionReference
+org.word.editor.core.WordTopComponent ..> org.openide.util.NbBundle.Messages
+org.word.editor.core.WordTopComponent ..> java.util.Collection
+org.word.editor.core.WordTopComponent ..> org.openide.util.Lookup
+org.word.editor.core.WordTopComponent --|> org.openide.windows.TopComponent
+org.word.editor.core.WordTopComponent ..> org.word.editor.api.WordFilter
+@enduml
